@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e1e1e;
+  color: #171717;
+}
+
+.container {
+  background-color: #fff;
+  color: #171717;
+  padding: 2rem;
+  width: 40%;
+  margin: 4rem auto;
+  border-radius: 10px;
+}
+
+.weather_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  border: none;
+  background: #1e1e1e;
+  color: #fff;
+  outline: none;
+  padding: 0.5rem 2.5rem;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.weather_search {
+  position: relative;
+}
+
+.weather_search i {
+  position: absolute;
+  color: #fff;
+  left: 10px;
+  top: 10px;
+  font-size: 15px;
+}
+
+/* .weather_units {
+  font-size: 1.5rem;
+}
+
+.weather_units span {
+  cursor: pointer;
+}
+
+.weather_units span:first-child {
+  margin-right: 0.5rem;
+} */
+
+.weather_body {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Weather_date_time {
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.weather_forcast {
+  background: #1e1e1e;
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+}
+
+.weather_icon img {
+  width: 100px;
+  filter: drop-shadow(2px 4px 6px black);
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+}
+
+.weather_temperature {
+  font-size: 1.7rem;
+}
+
+.weather_minmax {
+  display: flex;
+  justify-content: center;
+}
+
+.weather_minmax p {
+  font-size: 14px;
+  margin: 0.5rem;
+}
+
+.weather_info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin-top: 3rem;
+}
+
+.weather_card {
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  background-color: #f7f7f7;
+  color: #000;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.weather_card i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.weather_card p {
+  font-size: 14px;
+}
+
+@media (max-width: 936px) {
+  .container {
+    width: 90%;
+  }
+
+  .weather_header {
+    flex-direction: column;
+  }
+
+  .weather_units {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .weather_info {
+    grid-template-columns: none;
+  }
+}
